@@ -5,9 +5,9 @@ metadata:
   namespace: default
 spec:
   concurrencyPolicy: Forbid
-  schedule: '10 8 **** # cron spec of time, here, 8:05PM o'clock PDT 
+  schedule: '0 12 * * *' # cron spec of time, here, 8:00 AM, 11 AM  o'clock EST & UTC respectively
   jobTemplate:
-    Spec:
+    spec:
       backoffLimit: 2 # this has very low chance of failing, as all this does
                    # is prompt kubernetes to schedule new replica set for
                    # the deployment

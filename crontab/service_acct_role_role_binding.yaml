@@ -39,4 +39,4 @@ roleRef:
   name: deployment-restart
 subjects:
   - kind: ServiceAccount
-    name: deployment- restart
+    name: deployment-restart
