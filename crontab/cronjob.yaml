@@ -2,7 +2,7 @@ apiVersion: batch/v1
 kind: CronJob
 metadata:
   name: deployment-restart
-  namespace: default
+  namespace: k4ab
 spec:
   concurrencyPolicy: Forbid
   schedule: '0 12 * * *' # cron spec of time, here, 8:00 AM, 11 AM  o'clock EST & UTC respectively
@@ -29,4 +29,4 @@ spec:
                 - 'kubectl'
                 - 'rollout'
                 - 'restart'
-                - 'deployment/nginx-deployment'
+                - 'deployment.apps/myapp-deployment'
