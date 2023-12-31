@@ -1,1 +1,0 @@
-# kubernetes_For_Absolute_Beginner
